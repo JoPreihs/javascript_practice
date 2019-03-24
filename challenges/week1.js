@@ -27,9 +27,19 @@ function getSalePrice(originalPrice, reduction) {
 }
 
 function getMiddleCharacter(str) {
-  if (str === undefined) throw new Error("str is required");
+  var middleLetters = '';
+  if (str.length % 2 === 0) {
+    var even = str.length /2;
+    return str.slice(even -1, even +1);
+  } if (str.length % 2 !== 0) {
+    var odd = str.charAt((str.length/2))
+    return odd;
+  }
+  if (str === undefined) throw new Error("str is required"); 
   // Add your code here!
+  
 }
+
 
 function reverseWord(word) {
   if (word === undefined) throw new Error("word is required");
