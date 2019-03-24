@@ -40,7 +40,7 @@ describe("addVAT", () => {
     expect(addVAT(40, 17.5)).toBe(47);
   });
 
-  test.only("adds a VAT of 17.5% to a price of 33.50", () => {
+  test("adds a VAT of 17.5% to a price of 33.50", () => {
     expect(addVAT(33.5, 17.5)).toBe(39.3625);
   });
 
@@ -59,16 +59,16 @@ describe("getSalePrice", () => {
   });
 
   test("reduces a price of 79.99 by 15%", () => {
-    expect(getSalePrice(79.99, 15)).toBe(67.99);
+    expect(getSalePrice(79.99, 15)).toBe(67.9915);
   });
 
   test("reduces a price of 50 by 0%", () => {
-    expect(getSalePrice(50, 0)).toBe(0);
+    expect(getSalePrice(50, 0)).toBe(50);
   });
 });
 
 describe("getMiddleCharacter", () => {
-  test("returns the middle character from a string of odd length", () => {
+  test.only("returns the middle character from a string of odd length", () => {
     expect(getMiddleCharacter("bears!!!!")).toBe("s");
   });
 

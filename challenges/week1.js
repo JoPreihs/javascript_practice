@@ -22,6 +22,7 @@ function addVAT(originalPrice, vatRate) {
 function getSalePrice(originalPrice, reduction) {
   if (originalPrice === undefined) throw new Error("originalPrice is required");
   if (reduction === undefined) throw new Error("reduction is required");
+  else return originalPrice - ((originalPrice * reduction) / 100) ;
   // Add your code here!
 }
 
