@@ -16,7 +16,7 @@ describe("capitalize", () => {
     expect(capitalize("hello")).toBe("Hello");
   });
 
-  test.only("does nothing if the string is already capitalized", () => {
+  test("does nothing if the string is already capitalized", () => {
     expect(capitalize("Hello")).toBe("Hello");
   });
 
@@ -26,13 +26,13 @@ describe("capitalize", () => {
 });
 
 describe("generateInitials", () => {
-  test("returns the initials of a firstname and surname", () => {
-    expect(generateInitials("Frederic", "Bonneville")).toBe("F.B");
+  test("returns the initials of a firstname and lastname", () => {
+    expect(generateInitials("Frederic", "Bonneville")).toBe("FB");
   });
 });
 
 describe("addVAT", () => {
-  test("adds a VAT of 20% to a price of 100", () => {
+  test.only("adds a VAT of 20% to a price of 100", () => {
     expect(addVAT(100, 20)).toBe(120);
   });
 
