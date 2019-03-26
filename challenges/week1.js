@@ -22,7 +22,7 @@ function addVAT(originalPrice, vatRate) {
 function getSalePrice(originalPrice, reduction) {
   if (originalPrice === undefined) throw new Error("originalPrice is required");
   if (reduction === undefined) throw new Error("reduction is required");
-  else return originalPrice - ((originalPrice * reduction) / 100) ;
+  else return originalPrice - ((originalPrice * reduction) / 100);
   // Add your code here!
 }
 
@@ -40,8 +40,12 @@ function getMiddleCharacter(str) {
   
 }
 
-
 function reverseWord(word) {
+  var str = "";
+  var reverseStr = "";
+  for (var i = str.length -1; i >= 0; i--);
+  reverseStr += str[i];
+  return reverseStr = (word);
   if (word === undefined) throw new Error("word is required");
   // Add your code here!
 }
@@ -63,6 +67,10 @@ function getMeanScore(scores) {
 
 function simpleFizzBuzz(n) {
   if (n === undefined) throw new Error("n is required");
+  if (n % 3 === 0) return ("fizz");
+  if (n % 5 === 0) return ("buzz");
+  if (n % 3 === 0 && n % 5 === 0) return ("fizzbuzz");
+else return (n)
   // Add your code here!
 }
 

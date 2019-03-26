@@ -72,7 +72,7 @@ describe("getMiddleCharacter", () => {
     expect(getMiddleCharacter("bears!!!!")).toBe("s");
   });
 
-  test.only("returns the middle 2 characters from a string of even length", () => {
+  test("returns the middle 2 characters from a string of even length", () => {
     expect(getMiddleCharacter("help!!")).toBe("lp");
   });
 });
@@ -143,14 +143,14 @@ describe("simpleFizzBuzz", () => {
   });
 
   test("returns 'buzz' if the number is divisible by 5", () => {
-    expect(simpleFizzBuzz(3)).toBe("buzz");
+    expect(simpleFizzBuzz(5)).toBe("buzz");
   });
 
   test("returns the number if the number is divisible by neither 3 nor 5", () => {
     expect(simpleFizzBuzz(4)).toBe(4);
   });
 
-  test("returns 'fizzbuzz' if the number is divisible by 3 and 5", () => {
+  test.only("returns 'fizzbuzz' if the number is divisible by 3 and 5", () => {
     expect(simpleFizzBuzz(15)).toBe("fizzbuzz");
   });
 });
