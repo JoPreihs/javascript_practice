@@ -42,9 +42,9 @@ function getMiddleCharacter(str) {
 
 function reverseWord(word) {
   var str = "";
-  var reverseStr = "";
-  for (var i = str.length -1; i >= 0; i--);
-  reverseStr += str[i];
+  var reverseStr = ""; 
+  for (var i = str.length -1; i >= 0; i--); {
+  reverseStr += str[i]; }
   return reverseStr = (word);
   if (word === undefined) throw new Error("word is required");
   // Add your code here!
@@ -56,12 +56,16 @@ function reverseAllWords(words) {
 }
 
 function countLinuxUsers(users) {
+  if (users.type = "Linux");
+  return 0;
   if (users === undefined) throw new Error("users is required");
   // Add your code here!
 }
 
 function getMeanScore(scores) {
+  
   if (scores === undefined) throw new Error("scores is required");
+
   // Add your code here!
 }
 

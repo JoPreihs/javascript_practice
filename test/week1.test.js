@@ -150,7 +150,7 @@ describe("simpleFizzBuzz", () => {
     expect(simpleFizzBuzz(4)).toBe(4);
   });
 
-  test.only("returns 'fizzbuzz' if the number is divisible by 3 and 5", () => {
+  test("returns 'fizzbuzz' if the number is divisible by 3 and 5", () => {
     expect(simpleFizzBuzz(15)).toBe("fizzbuzz");
   });
 });
