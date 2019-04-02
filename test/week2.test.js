@@ -25,7 +25,7 @@ describe("getFillings", () => {
 });
 
 describe("isFromManchester", () => {
-  test("returns true if the person is from Manchester", () => {
+  test.only("returns true if the person is from Manchester", () => {
     const person = {
       name: "Mohammed",
       city: "Manchester",

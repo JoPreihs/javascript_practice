@@ -1,9 +1,13 @@
 function getFillings(sandwich) {
+  
   if (sandwich === undefined) throw new Error("ingredients is required");
   // Your code here!
 }
 
 function isFromManchester(person) {
+  const person = isFromManchester;
+  if city = "Manchester";
+  return true;
   if (person === undefined) throw new Error("person is required");
   // Your code here!
 }
