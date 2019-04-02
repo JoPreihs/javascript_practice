@@ -2,28 +2,25 @@ function capitalize(word) {
   if (word === undefined) throw new Error("word is required"); 
   else return word.charAt(0).toUpperCase() + word.slice(1);
 } 
-  // Add your code here!
 
 
 function generateInitials(firstName, lastName) {
   if (firstName === undefined) throw new Error("firstName is required");
   if (lastName === undefined) throw new Error("lastName is required");
   else return firstName.charAt(0).toUpperCase() + lastName.charAt(0).toUpperCase();
-  // Add your code here!
 }
 
 function addVAT(originalPrice, vatRate) {
   if (originalPrice === undefined) throw new Error("originalPrice is requied");
   if (vatRate === undefined) throw new Error("vatRate is required");
   else return originalPrice + ((originalPrice * vatRate) / 100) ;
-  // Add your code here!
+
 }
 
 function getSalePrice(originalPrice, reduction) {
   if (originalPrice === undefined) throw new Error("originalPrice is required");
   if (reduction === undefined) throw new Error("reduction is required");
   else return originalPrice - ((originalPrice * reduction) / 100);
-  // Add your code here!
 }
 
 function getMiddleCharacter(str) {
@@ -36,37 +33,36 @@ function getMiddleCharacter(str) {
     return odd;
   }
   if (str === undefined) throw new Error("str is required"); 
-  // Add your code here!
   
 }
 
 function reverseWord(word) {
+  if (word === undefined) throw new Error("word is required");
   var str = "";
   var reverseStr = ""; 
   for (var i = str.length -1; i >= 0; i--); {
   reverseStr += str[i]; }
-  return reverseStr = (word);
-  if (word === undefined) throw new Error("word is required");
-  // Add your code here!
+  return reverseStr;
+  
 }
 
 function reverseAllWords(words) {
   if (words === undefined) throw new Error("words is required");
-  // Add your code here!
+
 }
 
 function countLinuxUsers(users) {
   if (users.type = "Linux");
   return 0;
   if (users === undefined) throw new Error("users is required");
-  // Add your code here!
+
 }
 
 function getMeanScore(scores) {
-  
-  if (scores === undefined) throw new Error("scores is required");
-
-  // Add your code here!
+const meanScore = (total, currentValue) => total + currentValue;
+const sum = scores.reduce(meanScore);
+return sum/scores.length.toFixed(2);
+if (scores === undefined) throw new Error("scores is required");
 }
 
 function simpleFizzBuzz(n) {
@@ -74,8 +70,7 @@ function simpleFizzBuzz(n) {
   if (n % 3 === 0) return ("fizz");
   if (n % 5 === 0) return ("buzz");
   if (n % 3 === 0 && n % 5 === 0) return ("fizzbuzz");
-else return (n)
-  // Add your code here!
+else return (n);
 }
 
 module.exports = {
