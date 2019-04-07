@@ -25,7 +25,7 @@ describe("getFillings", () => {
 });
 
 describe("isFromManchester", () => {
-  test.only("returns true if the person is from Manchester", () => {
+  test("returns true if the person is from Manchester", () => {
     const person = {
       name: "Mohammed",
       city: "Manchester",
@@ -74,7 +74,7 @@ describe("getBusNumbers", () => {
 });
 
 describe("countSheep", () => {
-  test("returns 0 if there are 0 sheep in the array", () => {
+  test.only("returns 0 if there are 0 sheep in the array", () => {
     const arr = ["dog", "badger", "dog", "dog", "chicken"];
     expect(countSheep(arr)).toBe(0);
   });

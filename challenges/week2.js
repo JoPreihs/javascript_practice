@@ -1,30 +1,43 @@
 function getFillings(sandwich) {
-  
-  if (sandwich === undefined) throw new Error("ingredients is required");
-  // Your code here!
+   if (sandwich === undefined) throw new Error("ingredients is required");
+   const allFillings = sandwich.fillings;
+   return allFillings
 }
-
+ 
 function isFromManchester(person) {
-  const person = isFromManchester;
-  if city = "Manchester";
-  return true;
   if (person === undefined) throw new Error("person is required");
-  // Your code here!
-}
+  const nameOfCity = person.city;
+  if (nameOfCity === "Manchester") {
+    return true 
+   } else { 
+       return false }
+  }
 
 function getBusNumbers(people) {
   if (people === undefined) throw new Error("people is required");
-  // Your code here!
+  return Math.ceil(people/40);
+  // Solved watching Harriet's video
 }
 
 function countSheep(arr) {
   if (!arr) throw new Error("arr is required");
-  // Your code here!
-}
+  // find out if there are any sheep in the array
+  // if there are sheep, return number of sheep
+  const checkSheep = arr.includes("sheep");
+  if checkSheep = true;
+    return sum(arr["sheep"]);
+      if checkSheep = false;
+        return (0);
+      }
+  
 
 function hasMPostCode(person) {
   if (person === undefined) throw new Error("person is required");
-  // Your code here!
+  const firstLetter = person.address.postcode[0];
+  const secondLetter = person.address.postcode[1];
+  const isAlphabeticCharacter = isNan(Number(secondLetter));
+  return firstLetter === "M" && !isAlphabeticCharacter;
+  // Solved watching Harriet's video
 }
 
 module.exports = {
@@ -33,4 +46,4 @@ module.exports = {
   countSheep,
   getBusNumbers,
   hasMPostCode
-};
+}
