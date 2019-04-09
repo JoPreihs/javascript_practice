@@ -52,17 +52,24 @@ function reverseAllWords(words) {
 }
 
 function countLinuxUsers(users) {
-  if (users.type = "Linux");
-  return 0;
   if (users === undefined) throw new Error("users is required");
-
-}
+  let total = 0;
+  users.forEach(function (user) {
+    const machineType = user.type;
+    if (machineType === "Linux") {
+      total += 1 ;
+    }
+  });
+      return total;
+    }
+  //Completed with Harriet's video
 
 function getMeanScore(scores) {
+if (scores === undefined) throw new Error("scores is required");
 const meanScore = (total, currentValue) => total + currentValue;
 const sum = scores.reduce(meanScore);
 return sum/scores.length.toFixed(2);
-if (scores === undefined) throw new Error("scores is required");
+
 }
 
 function simpleFizzBuzz(n) {
