@@ -19,7 +19,7 @@ describe("findSmallNums", () => {
 });
 
 describe("findNamesBeginningWith", () => {
-  test("returns an array of names beginning with the specified character", () => {
+  test.only("returns an array of names beginning with the specified character", () => {
     const names = ["Sally", "Dave", "Susan", "Geoff", "Riley", "Sam"];
     expect(findNamesBeginningWith(names, "S")).toEqual([
       "Sally",
@@ -114,7 +114,7 @@ describe("getCities", () => {
 describe("getSquareRoots", () => {
   test("gets the square root of each number to 2 decimal places", () => {
     const nums = [36, 77, 12, 355, 92, 5];
-    expect(getSquareRoots(nums)).toEqual([6, 8.77, 3.46, 18.84, 9.59, 2.24]);
+    expect(getSquareRoots(nums)).toEqual([6.00, 8.77, 3.46, 18.84, 9.59, 2.24]);
   });
 });
 
@@ -132,7 +132,7 @@ describe("findSentencesContaining", () => {
     "The bugs field should hold the url to your project’s issue tracker and / or the email address to which issues should be reported."
   ];
 
-  test("returns only the sentences containing the specified string", () => {
+  test.only("returns only the sentences containing the specified string", () => {
     expect(
       findSentencesContaining(sentencesAboutPackageJson, "license")
     ).toEqual([

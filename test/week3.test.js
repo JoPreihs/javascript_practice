@@ -45,7 +45,7 @@ describe("getSquares", () => {
 });
 
 describe("getTotalSubjects", () => {
-  test("returns 0 if no people have subjects", () => {
+  test.only("returns 0 if no people have subjects", () => {
     const people = [
       { name: "Billy", subjects: [] },
       { name: "Claude", subjects: [] },
